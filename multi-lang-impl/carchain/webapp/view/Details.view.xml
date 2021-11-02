@@ -1,0 +1,97 @@
+<mvc:View
+    controllerName="CarChain.controller.Details"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:u="sap.ui.unified"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:t="sap.ui.table">
+    <Page
+        showHeader="false">
+        <l:VerticalLayout
+            id="vDetailsPage"
+            width="100%">
+            <l:content>
+                <Panel id="plFileBrowse">
+                    <content>
+                        <VBox class="sapUiSmallMarginTopBottom sapUiLargeMarginBeginEnd">
+                            <HBox justifyContent="SpaceBetween">
+                                <VBox>
+                                    <Text id="opelAstraJ" text="Opel astra J (2012):" class="sapUiSmallMarginBottom" />
+                                    <Image src="res/opel-astra-j.png"
+                                        alt="Opel astra J (2012)"
+                                        width="256px"
+                                        press="bImagePress" />
+                                </VBox>
+                                <VBox>
+                                    <Text id="opelAstraG2" text="Opel astra G (2000):" class="sapUiSmallMarginBottom" />
+                                    <Image src="res/opel-astra-g2.png"
+                                        alt="Opel astra G (2000)"
+                                        width="256px"
+                                        press="bImagePress" />
+                                </VBox>
+                                <VBox>
+                                    <Text id="corsaC" text="Corsa C (2003):" class="sapUiSmallMarginBottom" />
+                                    <Image src="res/corsa-c.png"
+                                        alt="Corsa C (2003)"
+                                        width="256px"
+                                        press="bImagePress" />
+                                </VBox>
+                            </HBox>
+                        </VBox>
+                        <VBox class="sapUiSmallMarginTopBottom sapUiLargeMarginBeginEnd">
+                            <HBox justifyContent="SpaceBetween">
+                                <VBox>
+                                    <Text id="skodaOctavia" text="Skoda Octavia II (2007):" class="sapUiSmallMarginBottom" />
+                                    <Image src="res/skoda-octavia.png"
+                                        alt="Skoda Octavia II (2007)"
+                                        width="256px"
+                                        press="bImagePress" />
+                                </VBox>
+                                <VBox>
+                                    <Text id="golfVIGTI" text="Golf VI (2012):" class="sapUiSmallMarginBottom" />
+                                    <Image src="res/golf6-gti.png"
+                                        alt="Golf VI GTI (2012)"
+                                        width="256px"
+                                        press="bImagePress" />
+                                </VBox>
+                                <VBox>
+                                    <Text id="audiA6" text="Audi A6 (2018):" class="sapUiSmallMarginBottom" />
+                                    <Image src="res/audi-a6.png"
+                                        alt="Audi A6 (2018)"
+                                        width="256px"
+                                        press="bImagePress" />
+                                </VBox>
+                            </HBox>
+                        </VBox>
+                        <VBox class="sapUiSmallMarginTopBottom sapUiLargeMarginBeginEnd">
+                            <HBox justifyContent="SpaceBetween">
+                                <VBox>
+                                    <Text id="fiat500" text="Fiat 500 (2009):" class="sapUiSmallMarginBottom" />
+                                    <Image src="res/fiat-500.png"
+                                        alt="Fiat 500 (2009)"
+                                        width="256px"
+                                        press="bImagePress" />
+                                </VBox>
+                                <VBox>
+                                    <Text id="bmwX6" text="BMW X6 (2008):" class="sapUiSmallMarginBottom" />
+                                    <Image src="res/bmw-x6.png"
+                                        alt="BMW X6 (2008)"
+                                        width="256px"
+                                        press="bImagePress" />
+                                </VBox>
+                                <VBox>
+                                    <Text id="daciaDuster" text="Dacia Duster (2016):" class="sapUiSmallMarginBottom" />
+                                    <Image src="res/dacia-duster.png"
+                                        alt="Dacia Duster (2016)"
+                                        width="256px"
+                                        press="bImagePress" />
+                                </VBox>
+                            </HBox>
+                        </VBox>
+                    </content>
+                </Panel>
+            </l:content>
+        </l:VerticalLayout>
+    </Page>
+</mvc:View>

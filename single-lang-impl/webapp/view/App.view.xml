@@ -1,0 +1,32 @@
+<mvc:View
+    height="100%"
+    controllerName="CarChain.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:tnt="sap.tnt">
+    <Page
+        showHeader="false"
+        enableScrolling="false">
+        <tnt:ToolHeader>
+            <Title
+                text="CarChain - A blockchain Car Rental system"
+                tooltip="CarChain - A blockchain Car Rental system"
+                textAlign="Center">
+            </Title>
+        </tnt:ToolHeader>
+        <l:VerticalLayout
+            id="vPrintPage"
+            width="100%">
+            <l:content>
+            </l:content>
+        </l:VerticalLayout>
+        <l:FixFlex>
+            <l:flexContent>
+                <App
+                    id="appMainContents"/>
+            </l:flexContent>
+        </l:FixFlex>
+    </Page>
+</mvc:View>

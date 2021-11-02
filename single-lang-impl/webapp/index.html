@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Prgama" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta charset="utf-8">
+
+    <title>CarChain - A blockchain Car Rental system</title>
+
+    <link rel="icon" href="res/logo.ico"></link>
+
+    <script>
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");
+
+        // If browser is Internet Explorer or IE11, show the bad news that we don't support the browser...
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+            alert("You are running on an unsupported web browser. " +
+                  "Please switch to another one in order to access the web application!");
+            window.close();
+        }
+    </script>
+
+    <script
+        id="sap-ui-bootstrap"
+        src="https://openui5.hana.ondemand.com/1.82.2/resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_belize"
+        data-sap-ui-libs="sap.m, sap.tnt, sap.ui.table, sap.ui.core"
+        data-sap-ui-compatVersion="edge"
+        data-sap-ui-resourceroots='{"CarChain": "./"}'
+        data-sap-ui-xx-componentPreload="off">
+    </script>
+    <script>
+        sap.ui.getCore().attachInit(function() {
+            sap.ui.require([
+                "sap/ui/core/ComponentContainer"
+            ], function() {
+                new sap.ui.core.ComponentContainer({
+                    name: "CarChain"
+                }).placeAt("content");
+            });
+        });
+    </script>
+</head>
+<body class="sapUiBody" id="content">
+</html>
